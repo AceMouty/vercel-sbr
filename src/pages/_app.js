@@ -1,18 +1,21 @@
 import { ChakraProvider, ColorModeProvider } from '@chakra-ui/react'
+import Layout from '@components/layout/Layout'
+import Head from 'next/Head'
 
 import theme from '../theme'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ChakraProvider resetCSS theme={theme}>
-      <ColorModeProvider
-        options={{
-          useSystemColorMode: true,
-        }}
-      >
-        <Component {...pageProps} />
-      </ColorModeProvider>
-    </ChakraProvider>
+    <>
+      <Head>
+        <title>Sweetbriar Rose | 290</title>
+      </Head>
+      <ChakraProvider resetCSS theme={theme}>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </ChakraProvider>
+    </>
   )
 }
 
