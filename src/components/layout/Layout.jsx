@@ -7,9 +7,9 @@ export default function Layout({ children }) {
 
         <Box w='100%'>
             <Navbar />
-            <Container centerContent>
+            <Box centerContent>
                 {children}
-            </Container>
+            </Box>
         </Box>
 
     )
