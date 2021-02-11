@@ -4,13 +4,14 @@ import { Container, Box } from '@chakra-ui/react'
 
 export default function Layout({ children }) {
     return (
-
-        <Box w='100%'>
-            <Navbar />
-            <Box centerContent>
-                {children}
+        <>
+            <Box w='100%'>
+                <Navbar />
+                <Box centerContent>
+                    {children}
+                </Box>
             </Box>
-        </Box>
 
+        </>
     )
 }

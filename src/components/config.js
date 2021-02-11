@@ -17,6 +17,9 @@ const paths = [
     { name: "About", path: "/about" }
 ]
 
+const mobileView = "(min-width: 920px)";
+
 module.exports = {
-    paths
+    paths,
+    mobileView
 }

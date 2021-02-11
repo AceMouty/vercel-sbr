@@ -21,7 +21,7 @@ import {
     AccordionIcon,
 } from '@chakra-ui/react'
 
-import { paths } from "@components/layout/config";
+import { paths } from "@components/config";
 
 export default function MobileNav() {
     const { isOpen, onOpen, onClose } = useDisclosure();
