@@ -7,9 +7,16 @@ const breakpoints = createBreakpoints({
   sm: '40em',
   md: '52em',
   lg: '64em',
-  xl: '80em'
+  xl: '80em',
+  desktop: "1024px",
+  tablet: "768px",
+  mobile: "650px"
 })
-
+/*
+  desktop: 1024
+  tablet: 768
+  mobile: 560
+*/
 const theme = extendTheme({
   colors: {
     black: '#16161D',
