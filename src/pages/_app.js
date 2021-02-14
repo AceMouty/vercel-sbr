@@ -5,6 +5,7 @@ import Head from 'next/Head'
 import theme from '../theme'
 
 function MyApp({ Component, pageProps }) {
+  console.log("UI THEME", theme)
   return (
     <>
       <Head>

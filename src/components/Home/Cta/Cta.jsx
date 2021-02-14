@@ -32,7 +32,7 @@ export default function Cta() {
       >
 
         <Heading
-          size={isMobile ? "4xl" : "3xl"}
+          fontSize={{ base: null, sm: "48px", md: "64px", lg: "98px" }}
           color={isMobile ? "whiteAlpha.800" : "whiteAlpha.900"}
           lineHeight="1.2"
           textAlign={!isMobile && "center"}
