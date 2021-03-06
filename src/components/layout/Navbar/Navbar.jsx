@@ -1,6 +1,4 @@
 import {
-  Container,
-  Flex,
   Heading,
   Box,
   Menu,
@@ -11,12 +9,6 @@ import { DesktopNav } from '@components/layout/Navbar/DesktopNav';
 import { MobileNav } from '@components/layout/Navbar/MobileNav';
 import { mobileView } from '@components/config'
 
-// const style = {
-//   "@support (backdrop-filter: blur(.25rem))":
-//   {
-//     back
-//   }
-// }
 export default function Navbar() {
   const [isMobile] = useMediaQuery(mobileView);
 
@@ -28,7 +20,6 @@ export default function Navbar() {
       width="100%"
       bg="blackAlpha.700"
       sx={{
-
         backdropFilter: "blur(.25rem)",
         backgroundColor: "rgba(0,0,0,0.7)"
       }
@@ -38,15 +29,14 @@ export default function Navbar() {
         margin="0 auto"
         sx={{ width: "min(1300px, 90vw)" }}
         padding="0px"
-        // border="2px solid orange"
         display="flex"
         justifyContent="space-between"
       >
         <Heading as='h2' color="whiteAlpha.800">Sweetbriar Rose</Heading>
         <Menu>
           {isMobile ?
-            <DesktopNav /> :
-            <MobileNav />
+            <MobileNav /> :
+            <DesktopNav />
           }
         </Menu>
       </Box>

@@ -24,7 +24,7 @@ const menuItems = [
   "Coffee & Pasteries",
 ]
 
-const mobileView = "(min-width: 920px)";
+const mobileView = "(max-width: 920px)";
 
 module.exports = {
   paths,

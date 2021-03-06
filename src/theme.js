@@ -3,17 +3,28 @@ import { createBreakpoints } from '@chakra-ui/theme-tools'
 
 const fonts = { mono: `'Menlo', monospace` }
 
-const breakpoints = createBreakpoints({
-  base: "0px",
-  sm: "560px",
-  md: "768px",
-  lg: "1024px"
-})
+// const breakpoints = createBreakpoints({
+//   base: "0px",
+//   xs: "320px",
+//   sm: "560px",
+//   md: "768px",
+//   lg: "1024px"
+// })
 /*
   desktop: 1024
   tablet: 768
   mobile: 560
 */
+
+const breakpoints = createBreakpoints({
+  xs: "20rem",
+  sm: "30em",
+  md: "48em",
+  lg: "62em",
+  xl: "80em",
+  "2xl": "96em",
+})
+
 const theme = extendTheme({
   colors: {
     black: '#16161D',

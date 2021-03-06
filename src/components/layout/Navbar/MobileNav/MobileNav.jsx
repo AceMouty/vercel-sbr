@@ -7,7 +7,6 @@ import {
   DrawerBody,
   DrawerCloseButton,
   DrawerContent,
-  DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
   IconButton,
@@ -45,7 +44,6 @@ export default function MobileNav() {
         onClose={onClose}
         finalFocusRef={btnRef}
         autoFocus={false}
-        size="xs"
       >
         <DrawerOverlay>
           <DrawerContent>
@@ -60,7 +58,6 @@ export default function MobileNav() {
 
                     return <ChakraLink href={obj.path} marginBottom="1rem">{obj.name}</ChakraLink>
                   } else {
-                    console.log("IN THE ACCORDIAN ELSE BLOCK")
                     return buildAccordian(obj)
                   }
                 })}
