@@ -17,19 +17,16 @@ export default function AboutSection() {
       <Box
         as="div"
         position="absolute"
-        width={{ base: "12rem", md: "10rem", xl: "20rem" }}
-        height="60rem"
+        width={{ base: "0", lg: "10rem" }}
+        height="80vh"
         backgroundColor="sbrPink"
         right="0rem"
         zIndex="hide"
-        height="90vh"
         display={{ base: "none", md: "20rem" }}
+
       ></Box>
       <Box
         as="section"
-        position="relative"
-        marginTop="4rem"
-        zIndex="hide"
       >
         <Box as="div">
           {
@@ -50,6 +47,7 @@ function MobileSection() {
         as="h1"
         fontSize={{ base: "4xl" }}
         textAlign="center"
+        marginTop="4rem"
       >
         Sweetbriar Rose
           </Heading>
@@ -75,15 +73,15 @@ function MobileSection() {
 			    </Text>
       <Link
         href="#"
+        as="button"
+        display="block"
+        padding=".6rem 5rem"
+        marginTop="1.5rem"
+        mx={{ base: "auto" }}
         backgroundColor="sbrPink"
         color="white"
         fontWeight="medium"
         fontSize={{ base: "2xl" }}
-        padding=".6rem 5rem"
-        display="inline-block"
-        marginTop="1.5rem"
-        display="block"
-        mx={{ base: "auto" }}
         textAlign={{ base: "center" }}
       >Our Story</Link>
     </>
@@ -96,6 +94,7 @@ function Section() {
       <Heading
         as="h1"
         fontSize="6xl"
+        marginTop="4rem"
       >
         Sweetbriar<br />Rose
       </Heading>
