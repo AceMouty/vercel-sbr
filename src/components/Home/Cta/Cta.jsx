@@ -1,8 +1,5 @@
 import {
   Box,
-  Button,
-  Container,
-  Flex,
   Heading,
   useMediaQuery
 } from "@chakra-ui/react";
@@ -16,37 +13,40 @@ export default function Cta() {
     normal: "linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45))",
     darker: "linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65))"
   }
+
   return (
     < Box
       as="section"
-      background={`${isMobile ? gradient.normal : gradient.darker}, url('/img/ShowcaseImg.jpg')`}
+      background={`${isMobile ? gradient.darker : gradient.normal}, url('/img/ShowcaseImg.jpg')`}
       backgroundPosition="right"
       backgroundSize="cover"
       h="100vh"
     >
       <Box
-        margin="0 auto"
+        mx="auto"
         sx={{ width: "min(1300px, 90vw)" }}
         padding="0px"
-        paddingTop={{ base: "8rem", md: "15rem" }}
+        paddingTop="8rem"
       >
 
         <Heading
-          fontSize={{ base: null, sm: "48px", md: "64px", lg: "98px" }}
-          color={isMobile ? "whiteAlpha.800" : "whiteAlpha.900"}
+          fontSize={{ base: "2.8rem", sm: "7xl", md: "8xl" }}
+          color={{ base: "whiteAlpha.900", md: "whiteAlpha.800" }}
           lineHeight="1.2"
-          textAlign={!isMobile && "center"}
+          textAlign={{ base: "center", md: "left" }}
         >
           Have A Glass<br />Share A Brew<br />Grab A Bite
       </Heading>
         <Box
           as="button"
           background="sbrPink"
+          display="block"
           color="white"
           padding=".6rem 5rem"
-          fontSize="2rem"
-          marginTop="5rem"
-          width={!isMobile && "100%"}
+          fontSize="2.5rem"
+          fontWeight="medium"
+          marginTop={{ base: "4rem", xs: "8rem" }}
+          mx={{ base: "auto", md: "0" }}
         >Browse</Box>
       </Box>
     </Box >
