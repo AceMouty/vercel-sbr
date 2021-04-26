@@ -1,4 +1,4 @@
-import { Box, Flex, HStack, Link, Stack } from "@chakra-ui/layout";
+import { Box, Flex, Heading, HStack, Link, Stack } from "@chakra-ui/layout";
 import { IconButton, useColorModeValue, useDisclosure } from "@chakra-ui/react";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 
@@ -26,7 +26,7 @@ function Navbar() {
     <Box as="nav" px={8}>
       <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
         <Box>
-          <h1>Sweebriar Rose</h1>
+          <Heading as={"h1"}>Sweetbriar Rose</Heading>
         </Box>
         <HStack spacing={8} display={{ base: "none", md: "flex" }}>
           {links.map((link, i) => (
