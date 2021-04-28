@@ -6,7 +6,7 @@ function FeatureL() {
       align={"center"}
       spacing={{ base: 8, md: 10 }}
       py={{ base: 20, md: 28 }}
-      direction={{ base: "column", md: "row" }}
+      direction={{ base: "column-reverse", md: "row" }}
     >
       <Flex
         flex={1}
@@ -29,9 +29,7 @@ function FeatureL() {
             align={"center"}
             w={"100%"}
             h={"100%"}
-            src={
-              "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80"
-            }
+            src={"/beer-tasting.png"}
           />
         </Box>
       </Flex>
@@ -41,7 +39,20 @@ function FeatureL() {
           fontWeight={600}
           fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
         >
-          <Text as={"span"} position={"relative"}>
+          <Text
+            as={"span"}
+            position={"relative"}
+            _after={{
+              content: "''",
+              width: "full",
+              height: "30%",
+              position: "absolute",
+              bottom: 1,
+              left: 0,
+              bg: "pink.300",
+              zIndex: -1,
+            }}
+          >
             Write once,
           </Text>
           <br />

@@ -14,7 +14,20 @@ function FeatureR() {
           fontWeight={600}
           fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
         >
-          <Text as={"span"} position={"relative"}>
+          <Text
+            as={"span"}
+            position={"relative"}
+            _after={{
+              content: "''",
+              width: "full",
+              height: "30%",
+              position: "absolute",
+              bottom: 1,
+              left: 0,
+              bg: "pink.300",
+              zIndex: -1,
+            }}
+          >
             Write once,
           </Text>
           <br />
@@ -49,9 +62,7 @@ function FeatureR() {
             align={"center"}
             w={"100%"}
             h={"100%"}
-            src={
-              "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80"
-            }
+            src={"/wine-tasting.png"}
           />
         </Box>
       </Flex>

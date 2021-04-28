@@ -18,6 +18,7 @@ function Features() {
         <Heading as={"h2"}>Services</Heading>
       </Center>
       <Container maxW={"5xl"}>
+        {/* TODO: Create services config obj, mpa through and return a L or R Feature */}
         <FeatureR />
         <FeatureL />
       </Container>
