@@ -28,11 +28,7 @@ function FeatureR() {
               zIndex: -1,
             }}
           >
-            Write once,
-          </Text>
-          <br />
-          <Text as={"span"} color={"red.400"}>
-            use everywhere!
+            Wine Tasting
           </Text>
         </Heading>
         <Text color={"gray.500"}>

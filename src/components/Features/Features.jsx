@@ -13,7 +13,7 @@ import FeatureL from "./FeatureL";
 
 function Features() {
   return (
-    <Box as={"section"} px={8} py={10}>
+    <Box as={"section"} pt={{ base: 20, md: 28 }}>
       <Center>
         <Heading as={"h2"}>Services</Heading>
       </Center>

@@ -53,11 +53,7 @@ function FeatureL() {
               zIndex: -1,
             }}
           >
-            Write once,
-          </Text>
-          <br />
-          <Text as={"span"} color={"red.400"}>
-            use everywhere!
+            Beer Tasting
           </Text>
         </Heading>
         <Text color={"gray.500"}>
