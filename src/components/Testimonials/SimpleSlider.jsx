@@ -12,6 +12,9 @@ function SimpleSlider() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
+    appendDots: dots => (
+          <ul style={{position: "static"}}> {dots} </ul>
+      ),
   };
 
   return (
