@@ -18,7 +18,7 @@ function SimpleSlider() {
   };
 
   return (
-    <Slider {...settings}>
+    <Slider {...settings} style={{overflow: "hidden"}}>
       {/* TODO: Create a config object for all testimonials */}
       <SliderContent />
       <SliderContent />
