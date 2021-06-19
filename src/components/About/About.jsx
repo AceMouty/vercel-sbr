@@ -11,17 +11,17 @@ const {
 
 function About() {
   return (
-    <Box as={"section"} pb={{ base: 20, md: 28 }}>
+    <Box as={"section"} pb={{ base: 20, md: 28 }} pt={{base: 20}}>
       <Center pb={{ base: 20, md: 28 }}>
         <Heading>About Us</Heading>
       </Center>
       <Container maxW={"5xl"}>
-        <Stack
+        {/* <Stack
           // align={"center"}
           spacing={{ base: 8, md: 10 }}
           // py={{ base: 20, md: 28 }}
           direction={{ base: "column", md: "row" }}
-        >
+        > */}
           <Stack flex={1} spacing={{ base: 5, md: 10 }}>
             <Heading
               lineHeight={1.1}
@@ -45,7 +45,7 @@ function About() {
                 Our Story
               </Text>
             </Heading>
-            <Text color={"gray.500"}>
+            <Text color={"gray.500"} >
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat
               autem tenetur, odio distinctio, corporis aperiam aliquam sunt,
               explicabo sequi veritatis non vel iste hic nesciunt optio laborum
@@ -72,7 +72,7 @@ function About() {
               tenetur fugiat voluptas iusto officia omnis eos expedita optio?
             </Text>
           </Stack>
-          <Flex
+          {/* <Flex
             flex={1}
             justify={"center"}
             align={"center"}
@@ -89,8 +89,8 @@ function About() {
             >
               <Box w={"100%"} h={"100%"} bg="tomato" />
             </Box>
-          </Flex>
-        </Stack>
+          </Flex> */}
+        {/* </Stack> */}
       </Container>
     </Box>
   );
