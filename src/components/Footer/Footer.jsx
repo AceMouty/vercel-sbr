@@ -30,9 +30,9 @@ function Footer() {
                 </Container>
                 <Box pt={3} pb={2}>
                     <Container as="div"maxW={{base: "3xl"}} >
-                        <Stack alignItems={{base: "center"}}>
+                        <Stack alignItems={{base: "center", md: "start"}} direction={{base: "column", md: "row"}}justifyContent={{md: "space-between"}}>
                             <Text>&copy; Sweetbriar Rose, All Rights Reserved</Text>
-                            <Text>Designed and Developed by: Kyle Guerrero</Text>
+                            <Text>Designed &amp; Developed by: Kyle Guerrero</Text>
                         </Stack>
                    </Container>
                 </Box>
