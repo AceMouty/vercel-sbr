@@ -4,6 +4,7 @@ import { Features } from "@components/Features";
 import { Testimonials } from "@components/Testimonials";
 import { Location } from "@components/Location"
 import { About } from "@components/About";
+import { Footer } from "@components/Footer"
 
 export default function Home() {
   return (
@@ -12,7 +13,8 @@ export default function Home() {
       <Features />
       <Testimonials />
       <Location />
-      {/* <About /> */}
+      <About />
+      <Footer />
     </Layout>
   );
 }
