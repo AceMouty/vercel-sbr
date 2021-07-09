@@ -10,7 +10,8 @@ function NavLink({ children }) {
       rounded={"md"}
       _hover={{
         textDecoration: "none",
-        bg: useColorModeValue("gray.200", "gray.700"),
+        bg: "pink.400",
+        color: "white"
       }}
       href={"#"}
     >
@@ -21,7 +22,7 @@ function NavLink({ children }) {
 
 function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const links = ["Link 1", "Link 2", "Link 3"];
+  const links = ["Services", "Testimonials", "Visit", "About"];
   return (
     <Box as="nav" px={8}>
       <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
