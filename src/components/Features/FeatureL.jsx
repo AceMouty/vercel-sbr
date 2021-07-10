@@ -1,6 +1,6 @@
 import { Box, Flex, Heading, Image, Stack, Text } from "@chakra-ui/react";
 
-function FeatureL() {
+function FeatureL({desc, img, heading}) {
   return (
     <Stack
       align={"center"}
@@ -29,7 +29,7 @@ function FeatureL() {
             align={"center"}
             w={"100%"}
             h={"100%"}
-            src={"/beer-tasting.png"}
+            src={img}
           />
         </Box>
       </Flex>
@@ -37,7 +37,7 @@ function FeatureL() {
         <Heading
           lineHeight={1.1}
           fontWeight={600}
-          fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
+          fontSize={{ base: "3xl", sm: "4xl"}}
         >
           <Text
             as={"span"}
@@ -53,13 +53,11 @@ function FeatureL() {
               zIndex: -1,
             }}
           >
-            Beer Tasting
+            { heading }
           </Text>
         </Heading>
         <Text color={"gray.500"}>
-          Snippy is a rich coding snippets app that lets you create your own
-          code snippets, categorize them, and even sync them in the cloud so you
-          can use them anywhere. All that is free!
+          { desc }
         </Text>
       </Stack>
     </Stack>

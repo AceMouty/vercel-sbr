@@ -1,6 +1,6 @@
 import { Box, Flex, Heading, Image, Stack, Text } from "@chakra-ui/react";
 
-function FeatureR() {
+function FeatureR({desc, img, heading}) {
   return (
     <Stack
       align={"center"}
@@ -12,7 +12,7 @@ function FeatureR() {
         <Heading
           lineHeight={1.1}
           fontWeight={600}
-          fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
+          fontSize={{ base: "3xl", sm: "4xl"}}
         >
           <Text
             as={"span"}
@@ -28,13 +28,11 @@ function FeatureR() {
               zIndex: -1,
             }}
           >
-            Wine Tasting
+            { heading }
           </Text>
         </Heading>
         <Text color={"gray.500"}>
-          Snippy is a rich coding snippets app that lets you create your own
-          code snippets, categorize them, and even sync them in the cloud so you
-          can use them anywhere. All that is free!
+         { desc }
         </Text>
       </Stack>
       <Flex
@@ -58,7 +56,7 @@ function FeatureR() {
             align={"center"}
             w={"100%"}
             h={"100%"}
-            src={"/wine-tasting.png"}
+            src={img}
           />
         </Box>
       </Flex>
